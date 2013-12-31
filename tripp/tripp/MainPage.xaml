@@ -13,13 +13,13 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <Grid x:Name="GridBody" Margin="0" Grid.Row="1" Height="688" VerticalAlignment="Bottom">
+        <Grid x:Name="GridBody" Margin="0" Grid.Row="1" Height="693" VerticalAlignment="Bottom" Background="DodgerBlue">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="500" MaxWidth="500"/>
                 <ColumnDefinition/>
                 <ColumnDefinition Width="500" MaxWidth="700"/>
             </Grid.ColumnDefinitions>
-            <m:Map x:Name="MapMain" Margin="0" Credentials="Agri2Jt-Zd_bsBz4tYg2YJfNYmvA976SfiUyaUp7vGSIAhuWzTTY60MbkREp91tX" Grid.Column="1">
+            <m:Map x:Name="MapMain" Margin="0" Credentials="Agri2Jt-Zd_bsBz4tYg2YJfNYmvA976SfiUyaUp7vGSIAhuWzTTY60MbkREp91tX" Grid.Column="1" BorderThickness="0">
                
             </m:Map>
             <Grid x:Name="GridAddLocation" Grid.Column="2" Margin="0">
@@ -27,7 +27,7 @@
                     <RowDefinition/>
                     <RowDefinition Height="6*"/>
                 </Grid.RowDefinitions>
-                <ScrollViewer x:Name="ScrollViewerLocationResults" Margin="0" Grid.Row="1" Height="593" VerticalAlignment="Bottom" FontFamily="Ebrima" FontSize="29.333">
+                <ScrollViewer x:Name="ScrollViewerLocationResults" Margin="0" Grid.Row="1" Height="613" VerticalAlignment="Bottom" FontFamily="Ebrima" FontSize="29.333">
                     <StackPanel x:Name="StackPanelLocationResults"/>
                 </ScrollViewer>
                 <Grid x:Name="GridSearch" Margin="0" Height="75" VerticalAlignment="Top">
@@ -36,19 +36,19 @@
                         <ColumnDefinition/>
                     </Grid.ColumnDefinitions>
                     <TextBox x:Name="TextBoxSearch" Margin="0" TextWrapping="Wrap" Text="Enter Location" FontSize="29.333" FontFamily="Ebrima" Height="75" VerticalAlignment="Top" TextAlignment="Center" Padding="10,14,10,0"/>
-                    <Button x:Name="ButtonSearch" Content="Search" Grid.Column="1" HorizontalAlignment="Stretch" Margin="0" VerticalAlignment="Top" FontSize="29.333" Click="ButtonClickSearchLocations" FontFamily="Ebrima" Height="75" FontWeight="Normal" Padding="12,2,12,4"/>
+                    <Button x:Name="ButtonSearch" Content="Search" Grid.Column="1" HorizontalAlignment="Stretch" Margin="0" VerticalAlignment="Top" FontSize="29.333" Click="ButtonClickSearchLocations" FontFamily="Ebrima" Height="75" FontWeight="Normal" Padding="12,2,12,4" Background="Transparent" BorderThickness="4"/>
                 </Grid>
             </Grid>
         </Grid>
-        <Grid x:Name="HeaderGrid" Margin="0" VerticalAlignment="Top">
+        <Grid x:Name="HeaderGrid" Margin="0" VerticalAlignment="Top" Background="DodgerBlue">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="100"/>
                 <ColumnDefinition/>
                 <ColumnDefinition Width="100"/>
             </Grid.ColumnDefinitions>
-            <TextBlock Grid.Column="2" Margin="0" TextWrapping="Wrap" Text="+" FontSize="64" TextAlignment="Center" Tapped="TappedAddLocation" FontFamily="Ebrima" Height="80" VerticalAlignment="Top"/>
-            <TextBlock x:Name="TextBlockTripp" Grid.Column="1" Margin="0" TextWrapping="Wrap" Text="tripp" TextAlignment="Center" FontSize="64" FontFamily="Ebrima" VerticalAlignment="Top" Height="80" Padding="0,-8,0,8" SelectionChanged="TextBlockTripp_SelectionChanged_1"/>
-            <TextBlock Margin="0" TextWrapping="Wrap" Text="?" FontSize="64" TextAlignment="Center" FontFamily="Ebrima" Height="80" VerticalAlignment="Top"/>
+            <TextBlock Grid.Column="2" Margin="0" TextWrapping="Wrap" Text="+" FontSize="48" TextAlignment="Center" Tapped="TappedAddLocation" FontFamily="Ebrima" Height="75" VerticalAlignment="Top" Padding="0" Width="75" HorizontalAlignment="Right"/>
+            <TextBlock x:Name="TextBlockTripp" Grid.Column="1" Margin="0" TextWrapping="Wrap" Text="tripp" TextAlignment="Center" FontSize="48" FontFamily="Ebrima" VerticalAlignment="Top" Height="75" Padding="0,-8,0,8" SelectionChanged="TextBlockTripp_SelectionChanged_1"/>
+            <TextBlock Margin="0" TextWrapping="Wrap" Text="?" FontSize="48" TextAlignment="Center" FontFamily="Ebrima" Height="75" VerticalAlignment="Top" Width="75" HorizontalAlignment="Left"/>
         </Grid>
     </Grid>
 </Page>
